@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.samao.seminar.domain">
+    <class name="SeminarEvent" table="SEMINAR_EVENT">
+        <id name="id" column="SEMINAR_EVENT_ID">
+            <generator class="identity"/>
+        </id>
+
+        <property name="startDate" column="START_DATE" type="date"/>
+        <property name="endDate" column="END_DATE" type="date"/>
+        <property name="speaker" column="SPEAKER" type="java.lang.String"/>
+
+        <many-to-one name="seminar" column="SEMINAR_ID" class="Seminar"/>
+    </class>
+</hibernate-mapping>

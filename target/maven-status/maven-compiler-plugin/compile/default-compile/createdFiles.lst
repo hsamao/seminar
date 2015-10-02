@@ -1,0 +1,5 @@
+com/samao/seminar/service/SeminarService.class
+com/samao/seminar/domain/SeminarEvent.class
+com/samao/seminar/domain/TechTalkType.class
+com/samao/seminar/domain/Seminar.class
+com/samao/seminar/domain/TechTalk.class
